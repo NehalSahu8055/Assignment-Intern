@@ -9,14 +9,14 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Layout from "./layout/RootLayout.jsx";
+import RootLayout from "./layout/RootLayout.jsx";
 import { quizData } from "./data/quizData";
 
 let data = quizData;
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/" element={<RootLayout />}>
       <Route path="" element={<App data={data} />} />
       <Route path="/response" element={<Response data={data} />} />
     </Route>,
@@ -24,7 +24,5 @@ const router = createBrowserRouter(
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+  <RouterProvider router={router} />,
 );
