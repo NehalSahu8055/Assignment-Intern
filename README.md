@@ -2,15 +2,13 @@
 
 ## Description
 
-This project aims to organise quiz where students can give their respective and get the score immediately
+This project aims to organise quiz where students can give their respective quiz and get the detailed review immediately
 
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Installation/Usage](#installation)
 - [Technologies Used](#technologies-used)
-- [API Endpoints](#api-endpoints)
-- [OriginalSite](#originalsite)
 - [Links](#links)
 - [Author](#author)
 
