@@ -18,12 +18,12 @@ function Score({ data, correctResponseArray }) {
               <span className="text-3xl">🎉</span>
             )}
             {correctResponseArray.length < 10 &&
-              correctResponseArray.length > 5 && (
+              correctResponseArray.length >= 5 && (
                 <SentimentVerySatisfiedIcon
                   sx={{ fontSize: 30, color: "green" }}
                 />
               )}
-            {correctResponseArray.length < 10 && (
+            {correctResponseArray.length < 5 && (
               <SentimentNeutralIcon sx={{ fontSize: 30, color: "red" }} />
             )}
           </div>
