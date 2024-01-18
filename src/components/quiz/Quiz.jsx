@@ -46,7 +46,7 @@ function Quiz({ data }) {
           />
         </div>
         <textarea
-          id="commentTextAreaID"
+          id={"responseEnter" + id}
           onInput={(e) => {
             setState((prev) => {
               return { ...prev, response: e.target.value };
